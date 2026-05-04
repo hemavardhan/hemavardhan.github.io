@@ -1,40 +1,157 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Hema Vardhan - Resume</title>
-    <style>
-        body { font-family: Arial; margin: 40px; line-height: 1.6; }
-        h1 { color: #2c3e50; }
-        h2 { color: #34495e; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hema Vardhan | Resume</title>
+
+<style>
+    body {
+        font-family: 'Segoe UI', sans-serif;
+        margin: 0;
+        background: #f5f7fa;
+        color: #333;
+    }
+
+    .container {
+        max-width: 900px;
+        margin: 40px auto;
+        background: #fff;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+        margin: 0;
+        color: #2c3e50;
+    }
+
+    h2 {
+        border-bottom: 2px solid #eee;
+        padding-bottom: 5px;
+        color: #34495e;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .contact a {
+        text-decoration: none;
+        color: #0077b5;
+        margin-right: 10px;
+    }
+
+    ul {
+        padding-left: 20px;
+    }
+
+    .skills span {
+        display: inline-block;
+        background: #eaf2ff;
+        color: #2c3e50;
+        padding: 5px 10px;
+        margin: 5px;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+
+    .project a {
+        color: #2980b9;
+        text-decoration: none;
+    }
+
+    .project a:hover {
+        text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+        .header {
+            flex-direction: column;
+        }
+    }
+</style>
 </head>
+
 <body>
 
-<h1>Hema Vardhan</h1>
-<p><b>Email:</b> your@email.com</p>
+<div class="container">
 
-<h2>Summary</h2>
-<p>Full-stack developer with experience in NestJS, Prisma, and AWS.</p>
+    <!-- HEADER -->
+    <div class="header">
+        <div>
+            <h1>Hema Vardhan</h1>
+            <p>Full Stack Developer</p>
+        </div>
 
-<h2>Skills</h2>
-<ul>
-    <li>Node.js, NestJS</li>
-    <li>PostgreSQL, Prisma</li>
-    <li>AWS, Docker</li>
-</ul>
+        <div class="contact">
+            <p>Email: your@email.com</p>
+            <a href="#">GitHub</a>
+            <a href="#">LinkedIn</a>
+        </div>
+    </div>
 
-<h2>Experience</h2>
-<p><b>Software Engineer</b></p>
-<ul>
-    <li>Built scalable APIs using NestJS</li>
-    <li>Optimized database queries</li>
-</ul>
+    <!-- SUMMARY -->
+    <h2>Summary</h2>
+    <p>
+        Backend-focused developer with experience in building scalable APIs using NestJS,
+        Prisma, and PostgreSQL. Strong understanding of system design, performance optimization,
+        and cloud integration.
+    </p>
 
-<h2>Projects</h2>
-<ul>
-    <li>Portfolio API</li>
-    <li>E-commerce backend</li>
-</ul>
+    <!-- SKILLS -->
+    <h2>Skills</h2>
+    <div class="skills">
+        <span>Node.js</span>
+        <span>NestJS</span>
+        <span>Prisma</span>
+        <span>PostgreSQL</span>
+        <span>Docker</span>
+        <span>AWS</span>
+        <span>TypeScript</span>
+    </div>
+
+    <!-- EXPERIENCE -->
+    <h2>Experience</h2>
+    <p><b>Software Engineer</b> — Company Name</p>
+    <ul>
+        <li>Developed scalable REST APIs using NestJS</li>
+        <li>Optimized database queries improving performance by 30%</li>
+        <li>Implemented authentication & role-based access control</li>
+    </ul>
+
+    <!-- PROJECTS -->
+    <h2>Projects</h2>
+
+    <div class="project">
+        <p><b>Portfolio API</b></p>
+        <ul>
+            <li>Built a high-performance API using NestJS and Prisma</li>
+            <li>Implemented JWT authentication and refresh tokens</li>
+            <li>
+                <a href="https://github.com/yourusername/project">
+                    View Project
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="project">
+        <p><b>E-commerce Backend</b></p>
+        <ul>
+            <li>Designed scalable microservice architecture</li>
+            <li>Integrated payment and order management system</li>
+        </ul>
+    </div>
+
+    <!-- EDUCATION -->
+    <h2>Education</h2>
+    <p>Bachelor's Degree in Computer Science</p>
+
+</div>
 
 </body>
 </html>
